@@ -1,0 +1,23 @@
+def analyze_sentence(sentence):
+    # Initialize counters
+    length_counter = 0
+    word_counter = 0
+    vowel_counter = 0
+    
+    vowels = "aeiouAEIOU"  
+        for i, char in enumerate(sentence):
+        if char == '.':
+            break  
+        
+      
+        length_counter += 1
+       
+        if char in vowels:
+            vowel_counter += 1
+        
+        if char == ' ':
+            word_counter += 1
+    word_counter += 1
+    print("Length of the sentence:", length_counter)
+    print("Number of words:", word_counter)
+    print("Number of vowels:", vowel_counter)
